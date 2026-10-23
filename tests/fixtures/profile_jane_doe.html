@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+  Test fixture. Reconstructed from the page structure described in
+  https://scrape.do/blog/true-people-search-scraping/ . Every value is fictional
+  (Jane Doe, 555 phone numbers, example.com emails).
+-->
+<html lang="en">
+<head>
+  <title>Jane Doe, Age 23, Washington, DC | TruePeopleSearch</title>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": []}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Jane Marie Doe",
+      "alternateName": ["Jane Marie Doe", "Jane D Smith", "Jane M Johnson"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2912 Northern Ave WE",
+        "addressLocality": "Washington",
+        "addressRegion": "DC",
+        "postalCode": "20001"
+      },
+      "telephone": ["(202) 555-5555", "(202) 555-0147", "(202) 555-0199"],
+      "email": ["janedoe@example.com", "jane.m.doe@example.com"],
+      "relatedTo": [
+        {"@type": "Person", "name": "John Doe"},
+        {"@type": "Person", "name": "Mary Doe"},
+        {"@type": "Person", "name": "Robert Smith"},
+        {"@type": "Person", "name": "Emily Doe"},
+        {"@type": "Person", "name": "Thomas Doe"}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">{ this is not valid json }</script>
+</head>
+<body>
+  <div id="personDetails" data-fn="Jane" data-ln="Doe" data-age="23">
+    <h1 class="oh1">Jane Doe</h1>
+    <span>Age 23</span>
+  </div>
+  <a data-link-to-more="address" href="/find/address/2912-northern-ave-we_washington-dc_20001">
+    <span itemprop="streetAddress">2912 Northern Ave WE</span>
+    <span itemprop="addressLocality">Washington</span>,
+    <span itemprop="addressRegion">DC</span>
+    <span itemprop="postalCode">20001</span>
+  </a>
+  <a data-link-to-more="phone" href="/find/phone/2025555555">
+    <span itemprop="telephone">(202) 555-5555</span>
+  </a>
+</body>
+</html>
