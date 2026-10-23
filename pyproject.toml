@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "truepeoplesearch-scraper"
+version = "0.1.0"
+description = "Scrape TruePeopleSearch.com profile pages (name, age, address, phones, emails, aliases, relatives) with Python."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Buğrahan Saka" }]
+keywords = ["truepeoplesearch", "web scraping", "people search", "scraper", "json-ld", "beautifulsoup"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+]
+dependencies = ["requests>=2.25", "beautifulsoup4>=4.9"]
+
+[project.urls]
+Homepage = "https://github.com/bugrahansss/truepeoplesearch-scraper"
+Source = "https://github.com/bugrahansss/truepeoplesearch-scraper"
+Issues = "https://github.com/bugrahansss/truepeoplesearch-scraper/issues"
+Guide = "https://scrape.do/blog/true-people-search-scraping/"
+
+[project.scripts]
+truepeoplesearch-scraper = "truepeoplesearch_scraper.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
